@@ -121,6 +121,7 @@ nav box-icon {
 }
 
 /* Work */
+
 .work {
   display: flex;
   padding: 2% 10%;
@@ -142,13 +143,12 @@ nav box-icon {
   min-width: 50%;
   object-fit: cover;
   vertical-align: bottom;
+  margin-right: 5rem;
 }
 
-
-
-
-
-
+.work ul li:hover { 
+  background: transparent;
+}
 
 
 
