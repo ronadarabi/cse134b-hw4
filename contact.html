@@ -4,48 +4,42 @@
         <meta charset="UTF-8"/>
         <title>Contact</title>
         <link rel="icon" type="image/x-icon" href="\images\cat.png">
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <header>
-            <h2>Contact</h2>
+            <img class="logo" src="/images/cat.png" alt="logo">
+            <nav>
+                <ul class="nav-items">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/index.html#work">Work</a></li>
+                    <li class="contact"><a href="/contact.html">Contact</a></li>
+                </ul>
+                <box-icon name="menu" color="black" size="lg" id="menu"></box-icon>
+            </nav>
         </header>
         <main>
-            <form action="mailto:rdarabi@ucsd.edu" method="get" id="contactform">
-                <fieldset>
-                    <legend>Contact Me</legend>
-                    <label for ="query">Subject:</label>
-                    <select name="topic" id="query" for="contactform">
-                        <option value="">Please choose an option</option>
-                        <optgroup label="General">
-                            <option value="Follow up questions">Follow up questions</option>
-                            <option value="Suggestions">Suggestions</option>
-                        </optgroup>
-                        <optgroup label="Career specific">
-                            <option value="Job opportunities">Job opportunities</option>
-                        </optgroup>
-                        <optgroup label="Other">
-                            <option value="Other">Other</option>
-                        </optgroup>
-                    </select><br><br>
-                    <label for="name">Name:</label>
+            <h1 class="welcome-heading" style="text-align: center; padding: 2% 8%;">Interested in learning more?</h1>
+            <p style="text-align: center; padding: 0% 6%; color:darkslategray">Fill out the form below to get in contact with Rona.</p>
+            <form id="contact" class="contact" action="mailto:rdarabi@ucsd.edu" method="get">
+                <fieldset class="contact-inputs">
+                    <label for="name" style="background-color: white;">Name:</label>
                     <input type="text" id="name" name="name"><br><br>
-                    <label for="role">Role:</label>
-                    <input list="roles" id="role" name="role">
-                    <datalist id="roles">
-                        <option value="Student">
-                        <option value="Professor">
-                        <option value="Employer">
-                    </datalist><br><br>
-                    <label for="email">Email:</label>
+                    <label for="email" style="background-color: white;">Email:</label>
                     <input type="text" id="email" name="email"><br><br>
-                    <p><label for="msg">Message:</label></p>
-                    <textarea id="msg" name="msg" rows="4" cols="50">Write your message here...</textarea><br><br>
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" class="submit-button">
                 </fieldset>
+                <fieldset class="contact-message">
+                    <p style="background-color: white;"><label for="msg" style="background-color: white;">Message:</label></p>
+                    <textarea id="msg" name="msg" rows="4" cols="50"> Write your message here...</textarea><br><br>
+                </fieldset> 
               </form>
         </main>
         <footer>
+            <p style="text-align: center; padding: 2% 8%; font-size: .8rem;">Made by Rona Darabi, 2023</p>
         </footer>
     </body>
 </html>

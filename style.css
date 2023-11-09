@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+* { 
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    background-color: darkseagreen;
+
+}
+
+header { 
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1vh;
+}
+
+body { 
+    height: 95vh;
+    width:auto;
+    padding: 1%;
+}
+
+.logo { 
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+    margin-right: auto;
+}
+
+  /* Navigation bar */
+nav { 
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul { 
+    list-style: none;
+}
+
+nav ul li { 
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+nav ul li a { 
+    transition: all 0.3s ease 0s;
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover { 
+    color: lightcoral;
+}
+
+nav box-icon { 
+  display: none;
+}
+
+
+@media only screen and (max-width:768px) { 
+  nav { 
+    flex-direction: column;
+    position: relative;
+  }
+  nav box-icon {
+    display: block;
+    position: absolute;
+    top: 1.125rem;
+    right: 2rem;
+  }
+  nav ul { 
+    display: none;
+  }
+  .showmenu { 
+    display: block;
+  }
+  nav ul li { 
+    padding: 2% 0;
+  }
+  nav ul li a { 
+    color: black;
+  }
+}
+
+/* Welcome to my page */
+.welcome { 
+  display: flex;
+  padding: 2% 8%;
+  align-items: center;
+  height: 85vh;
+  width: 100%;
+  justify-content: center;
+}
+
+.welcome-heading { 
+  font-size: 2rem;
+  background: linear-gradient(
+    to right, 
+    #7953cd 20%,
+    #00affa 30%,
+    #0190cd 70%,
+    #764ada 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: welcome-text 5s ease-in-out infinite alternate;
+}
+
+@keyframes welcome-text {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
+
+/* Work */
+.work {
+  display: flex;
+  padding: 2% 10%;
+  justify-content: space-between;
+}
+.work ul { 
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.work ul li { 
+  height: 40vh;
+  flex-grow: 1;
+}
+
+.work img {
+  max-height: 100%;
+  min-width: 50%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+
+
+
+
+
+
+
+
+/* Media queries */
+
+
+

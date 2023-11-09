@@ -4,11 +4,22 @@
         <meta charset="UTF-8"/>
         <title>About</title>
         <link rel="icon" type="image/x-icon" href="\images\cat.png">
+        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <header>
-            <h1>About Me</h1>
+            <img class="logo" src="/images/cat.png" alt="logo">
+            <nav>
+                <ul class="nav-items">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/index.html#work">Work</a></li>
+                    <li class="contact"><a href="/contact.html">Contact</a></li>
+                </ul>
+                <box-icon name="menu" color="black" size="lg" id="menu"></box-icon>
+            </nav>
         </header>
         <main>
             <div class="mypicture">
@@ -47,23 +58,9 @@
                     </ul>
                 </ol>
             </section>
-            <section>
-                <h3>Interests</h3>
-                <p>Use this audio to follow along.</p>
-                <audio controls>
-                    <source src="\images\myinterests2.mp3" type="audio/mp3">
-                    Your browser does not support this audio element.
-                </audio>
-                <br>
-                <video width="320" height="240" controls>
-                    <source src="\images\myinterests.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p>I also enjoy music, here is a song from one of my current favorite albums.</p>
-                <iframe src="https://youtu.be/twzwCCCaPR8?si=sLpb50vgFMAZA5Cm" title="images"></iframe>
-            </section>
         </main>
         <footer>
+            <p style="text-align: center; padding: 2% 8%; font-size: .8rem;">Made by Rona Darabi, 2023</p>
         </footer>
     </body>
 </html>
