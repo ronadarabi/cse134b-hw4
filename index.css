@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,300&display=swap');
+
+* { 
+    font-family: 'IBM Plex Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    background-color: darkseagreen;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+}
+
+header { 
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1vh;
+}
+
+  body { 
+    height: 2vh;
+    width:auto;
+    padding: 1%;
+  }
+
+  .logo { 
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+    margin-right: auto;
+  }
+
+  .nav-items { 
+    list-style: none;
+  }
+
+  .nav-items li { 
+    display: inline-block;
+    padding: 0rem 1rem;
+  }
+
+  .nav-items li a { 
+    transition: all 0.3s ease 0s;
+    color: black;
+  }
+
+  .nav-items li a:hover { 
+    color: lightcoral;
+  }
+
+  button { 
+    padding: 2vh 6vh;
+    margin-left: 2rem;
+    background-color: rgba(0,136,200,1);
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 1rem;
+  }
+
+  button:hover { 
+    background-color: rgba(0,136,150,2);
+  }
+
+  .education { 
+    padding: 4vh;
+    width: 95%;
+  }

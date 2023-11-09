@@ -4,32 +4,69 @@
         <meta charset="UTF-8"/>
         <title>Rona's Portfolio</title>
         <link rel="icon" type="image/x-icon" href="\images\cat.png">
-        <style>
-            h1 {color:darkcyan;}
-        </style>    
+        <link rel="stylesheet" href="index.css">
     </head>
 
     <body>
-        <header>
-            <h1>Welcome!</h1>
-            <h3>Index</h3>
+        <header id="home">
+            <img class="logo" src="/images/cat.png" alt="logo">
             <nav>
-                <a href="/about/">About</a> |
-                <a href="/work/">Work</a> |
+                <ul class="nav-items">
+                    <li><a href="#edu">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                </ul>
             </nav>
-            <a href="contact.html">
-                <button>Contact</button>
-            </a>
+            <a class="contact" href="#contact"><button>Contact</button></a>
         </header>
         <main>
-            <script>
-            </script>
-            <template>
-                <h1>These are brainstorms!</h1>
-                <canvas id="mycanvas">
-                    This browser does not support the canvas tag.
-                </canvas>
-            </template>
+            <picture>
+                <img src="\images\yearbook.png" alt="2020 Picture" style="width:25%">
+            </picture>
+            <div id="edu" class="education">
+                <h3>Education</h3>
+                <p>B.S. Mathematics-Computer Science at <strong>University of California, San Diego, </strong><i>2021-2025</i></p>
+                <p>Relevant Coursework</p>
+                <ul>
+                    <li>CSE 101: <i>Design and Analysis of Algorithms</i></li>
+                    <li>CSE 100: <i>Advanced Data Structures</i></li>
+                    <li>CSE 30: <i>Computer Organization and Systems Programming</i></li>
+                    <li>CSE 12: <i>Basic Data Structures and Object-Oriented Design</i></li>
+                    <li>CSE 15L: <i>Software Tools and Techniques Labratory</i></li>
+                    <li>DSC 10: <i>Introduction to Data Science</i></li>
+                </ul>
+            </div>
+            <div id="experience">
+                <h3>Experience</h3>
+                <ol>
+                    <li><b>REU Research Assistant</b> at CSE PACE, <i>January 2023 - Present</i></li>
+                    <aside>CSE PACE is a program that piloted during the 2022-2023 school year, its aim being to improve the retention rate of typically underrepresented students in CSE majors. My overarching responsibility was analyzing the impact of the program. </aside>
+                    <ul>
+                        <li>Coordinate with faculty leadership to analyze the program assessment data collected in PACE’s pilot 
+                            year and translate the data to generalizable research and actionable lessons for the next iteration of 
+                            CSE-PACE</li>
+                        <li>Extract quantitative analyses of survey responses to create descriptive statistics of attendance and 
+                            engagement metrics, as well as regression analyses to predict relationships between factors of 
+                            engagement</li>
+                        <li>Perform qualitative coding of texts and thematic analyses of open-ended responses by developing 
+                            codebooks and using natural language processing</li>
+                    </ul>
+                </ol>
+            </div>
+            <div id="contact">
+                <form action="mailto:rdarabi@ucsd.edu" method="get" id="contactform">
+                    <fieldset>
+                        <legend>Contact Me</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name"><br><br>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email"><br><br>
+                        <p><label for="msg">Message:</label></p>
+                        <textarea id="msg" name="msg" rows="4" cols="50">Write your message here...</textarea><br><br>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                  </form>
+                </div>
+
         </main>
         <footer>
             <p>Made by Rona Darabi 2023</p>
