@@ -1,0 +1,74 @@
+.pace { 
+    height: 100dvh;
+    width: 80dvh;
+    padding: 2% 8%;
+}
+
+.pace-figure {
+    float: left;
+    margin-left: 30%;
+    width: 50%;
+    height: 50%;
+}
+
+.pace-desc { 
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/*pace { 
+    display: flex;
+    padding: 2% 10%;
+    justify-content: space-between;
+
+    /* Nested CSS example *//*
+    & ul { 
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+
+    & li { 
+        height: 40vh;
+        flex-grow: 1;
+    }
+
+    }
+    & img { 
+    max-height: 100%;
+    min-width: 50%;
+    object-fit: cover;
+    vertical-align: bottom;
+    }
+}
+
+.pace { 
+    display: flex;
+    flex-direction: column;
+    padding: 2% 8%;
+    align-items: center;
+    height: 85dvh;
+    width: 50%;
+    justify-content: space-between;
+  }
+  
+.pace-heading { 
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background: linear-gradient(
+      to right, 
+      #7953cd 20%,
+      var(--b, #00affa),
+      #00affa 30%,
+      #0190cd 70%,
+      #764ada 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: welcome-text 5s ease-in-out infinite alternate;
+  }
+*/
