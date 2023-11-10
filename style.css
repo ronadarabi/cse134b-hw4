@@ -145,12 +145,6 @@ nav box-icon {
   nav { 
     flex-direction: column;
   }
-  nav box-icon {
-    display: block;
-    position: absolute;
-    top: 1.125rem;
-    right: 2rem;
-  }
   nav ul { 
     flex-direction: column;
     display: none;
@@ -178,6 +172,9 @@ nav box-icon {
 } 
 
 @media all and (max-width:400px) { 
+  nav { 
+    flex-direction: column;
+  }
   nav ul { 
     flex-direction: column;
   }
