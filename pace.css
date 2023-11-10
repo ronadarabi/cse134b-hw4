@@ -1,5 +1,6 @@
 .pace { 
     display: flex;
+    flex-direction: row;
     align-items: center;
     padding: 2% 8%;
 }
@@ -9,4 +10,11 @@ img {
   width: 80%;
   height: 80%;
 }
+
+@media only screen and (max-width:768px){
+  .pace {
+    flex-direction: column;
+  }
+}
+
 
