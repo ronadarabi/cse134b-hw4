@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-
+/* Custom font, variable, color-mix */
 :root { 
   --b: color-mix(in srgb, rgb(17, 124, 148) 75%, white);
 }
@@ -14,9 +14,11 @@
 }
 
 header { 
+  /* flexbox */
     display: flex; 
     justify-content: flex-end;
     align-items: center;
+    /* viewport - dvh */
     padding: 1dvh;
 }
 
@@ -28,11 +30,13 @@ body {
 
 .logo { 
     cursor: auto;
+    /* relative measurement - rem */
     width: 5rem;
     height: 5rem;
     margin-right: auto;
 }
 
+/* has selector */
 h1:has(+:is(a,h5)) { 
   margin: 0 0 0.5rem 0;
 }
@@ -54,6 +58,7 @@ nav ul li {
 }
 
 nav ul li a { 
+  /* transition */
     transition: all 0.3s ease 0s;
     color: black;
     text-decoration: none;
@@ -98,7 +103,7 @@ nav box-icon {
   animation: welcome-text 5s ease-in-out infinite alternate;
 }
 
-
+/* animation */
 @keyframes welcome-text {
   0% {
       background-position: 0% 50%;
@@ -115,6 +120,7 @@ nav box-icon {
   padding: 2% 10%;
   justify-content: space-between;
 
+  /* Nested CSS example */
   & ul { 
     display: flex;
     flex-wrap: wrap;
@@ -133,30 +139,8 @@ nav box-icon {
     vertical-align: bottom;
   }
 }
-/*
-.work ul { 
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-}
-
-.work ul li { 
-  height: 40vh;
-  flex-grow: 1;
-}
-
-.work img {
-  max-height: 100%;
-  min-width: 50%;
-  object-fit: cover;
-  vertical-align: bottom;
-}
-*/
-
-
 
 /* Media queries */
-
 @media only screen and (max-width:768px) { 
   nav { 
     flex-direction: column;
@@ -169,6 +153,7 @@ nav box-icon {
     right: 2rem;
   }
   nav ul { 
+    flex-direction: column;
     display: none;
   }
   .showmenu { 
@@ -176,6 +161,7 @@ nav box-icon {
   }
   nav ul li { 
     padding: 2% 0;
+    margin: 0.8em 0;
   }
   nav ul li a { 
     color: black;
