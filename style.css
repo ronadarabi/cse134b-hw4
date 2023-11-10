@@ -170,21 +170,21 @@ nav box-icon {
     height: 50dvh;
   }
 
-  @media all and (max-width:400px) { 
-    nav ul { 
-      flex-direction: column;
-    }
-    nav ul li { 
-      text-align: center;
-    }
-  }
-
   .work { 
     & img { 
       width: 100%;
     }
   }
 } 
+
+@media all and (max-width:400px) { 
+  nav ul { 
+    flex-direction: column;
+  }
+  nav ul li { 
+    text-align: center;
+  }
+}
 
 @media (max-aspect-ratio: 1/1) {
   li {
