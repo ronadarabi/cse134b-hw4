@@ -4,6 +4,10 @@
   --b: color-mix(in srgb, rgb(17, 124, 148) 75%, white);
 }
 
+:scope {
+  background-color: darkseagreen;
+}
+
 * { 
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
