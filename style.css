@@ -144,7 +144,6 @@ nav box-icon {
 @media only screen and (max-width:768px) { 
   nav { 
     flex-direction: column;
-    position: relative;
   }
   nav box-icon {
     display: block;
@@ -165,6 +164,25 @@ nav box-icon {
   }
   nav ul li a { 
     color: black;
+  }
+
+  .welcome { 
+    height: 50dvh;
+  }
+
+  @media all and (max-width:400px) { 
+    nav ul { 
+      flex-direction: column;
+    }
+    nav ul li { 
+      text-align: center;
+    }
+  }
+
+  .work { 
+    & img { 
+      width: 100%;
+    }
   }
 } 
 
