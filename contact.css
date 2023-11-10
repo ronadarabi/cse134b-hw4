@@ -67,5 +67,15 @@ form {
   }
 
 /*Media Queries*/
+@media only screen and (max-width:768px) { 
+  form { 
+    flex-direction: column;
+  }
+} 
 
+@media only screen and (max-width:400px) { 
+  form { 
+    flex-direction: column;
+  }
+}
   
