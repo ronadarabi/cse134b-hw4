@@ -7,12 +7,10 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: white;
   }
   
   fieldset { 
     border: 0;
-    background-color: white;
   }
   
   input {
@@ -27,14 +25,12 @@ form {
     flex-direction: column;
     order: 2;
     width: 25%;
-    background-color: white;
   }
   
   .contact-message > textarea { 
     flex: 1;
     min-width: 18em;
     min-height: 18em;
-    background-color: white;
   }
   
   .contact-inputs { 
@@ -47,7 +43,6 @@ form {
     width: 100%;
     padding: 1em;
     margin-bottom: 1em;
-    background-color: white;
   }
   
   .submit-button { 
@@ -67,7 +62,10 @@ form {
   
   .submit-button:active {
     background-color: steelblue;
-    box-shadow: 0 5px #666;
+    box-shadow: 0 .3125rem #666;
     transform: translateY(4px);
   }
+
+/*Media Queries*/
+
   
