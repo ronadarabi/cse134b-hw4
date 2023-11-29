@@ -17,14 +17,7 @@
                     <li><a href="/about.html">About</a></li>
                     <li><a href="/index.html#work">Work</a></li>
                     <li class="contact"><a href="/contact.html">Contact</a></li>
-                    <button onclick="darkmode()" class="dark-button">Dark mode</button>
                 </ul>
-                <script>
-                    function darkmode() {
-                       var b = document.body;
-                       b.classList.toggle("dark-mode");
-                    }
-                </script>
             </nav>
         </header>
         <main>
@@ -46,13 +39,9 @@
                 </fieldset>
                 <fieldset class="contact-message" style="background-color: transparent; font-weight: bold;">
                     <label for="msg" >Message*</label>
-                    <textarea id="msg" name="msg" rows="4" cols="50"  form="contact" style="padding: .6em; box-sizing: border-box;" required minlength="1" maxlength="5000" placeholder="Write your message here..."></textarea>
-                    <span id=""></span>
-                    <script>
-                        document.getElementById('textarea').onkeyup = function () {
-                            document.getElementById('count').innerHTML = "Characters left: " + (500 - this.value.length);
-                        };
-                    </script>
+                    <input type="text" id="msg" name="msg" style="padding: .5em; box-sizing: border-box;" placeholder="Write your message here..." required minlength="1" maxlength="1000"  pattern="[a-zA-Z0-9!@#$%^*_|]" title="Please enter valid characters.">
+                    <output name="error">Error: No special characters.</output>
+                    <output name="req">*This field is required.</output>
                 </fieldset> 
             </form>
             <fieldset style="text-align: center;">

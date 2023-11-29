@@ -11,12 +11,19 @@
         <header>
             <img class="logo" src="/images/cat.png" alt="logo">
             <nav>
-                <ul class="nav-items">
+                <ul class="nav-items" style="color: white;">
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/about.html">About</a></li>
                     <li><a href="/index.html#work">Work</a></li>
                     <li class="contact"><a href="/contact.html">Contact</a></li>
+                    <button onclick="darkmode()" class="dark-button">Dark mode</button>
                 </ul>
+                <script>
+                    function darkmode() {
+                       var b = document.body;
+                       b.classList.toggle("dark-mode");
+                    }
+                </script>
             </nav>
         </header>
         <main>

@@ -4,16 +4,12 @@
   --b: color-mix(in srgb, rgb(17, 124, 148) 75%, white);
 }
 
-:scope {
-  background-color: darkseagreen;
-}
-
 * { 
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
     margin: 0; 
     padding: 0;
-    background-color: darkseagreen;
+    
 
 }
 
@@ -30,6 +26,13 @@ body {
     height: 95vh;
     width:auto;
     padding: 1%;
+    background-color: darkseagreen;
+    color: black;
+}
+
+.dark-mode{ 
+  background-color: black;
+  color: white;
 }
 
 .logo { 
@@ -64,12 +67,26 @@ nav ul li {
 nav ul li a { 
   /* transition */
     transition: all 0.3s ease 0s;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 nav ul li a:hover { 
     color: lightcoral;
+}
+
+.dark-button { 
+    padding: 0%;
+    font-size: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 0;
+    flex-direction: inline;
 }
 
 

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Contact</title>
+        <link rel="icon" type="image/x-icon" href="\images\cat.png">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="/images/cat.png" alt="logo">
+            <nav>
+                <ul class="nav-items">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/index.html#work">Work</a></li>
+                    <li class="contact"><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form id="contact" class="contact" action="mailto:rdarabi@ucsd.edu" method="get">
+                <fieldset class="contact-inputs" style="background-color: transparent; font-weight: bold;">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email"><br><br>
+                    <input type="submit" value="Submit" class="submit-button">
+                </fieldset>
+                <fieldset class="contact-message" style="background-color: transparent; font-weight: bold;">
+                    <p><label for="msg" >Message:</label></p>
+                    <textarea id="msg" name="msg" rows="4" cols="50"> Write your message here...</textarea><br><br>
+                </fieldset> 
+              </form>
+        </main>
+        <footer>
+            <p style="text-align: center; padding: 2% 8%; font-size: .8rem;">Made by Rona Darabi, 2023</p>
+        </footer>
+    </body>
+</html>
