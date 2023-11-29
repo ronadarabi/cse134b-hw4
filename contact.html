@@ -47,12 +47,6 @@
                 <fieldset class="contact-message" style="background-color: transparent; font-weight: bold;">
                     <label for="msg" >Message*</label>
                     <textarea id="msg" name="msg" rows="4" cols="50"  form="contact" style="padding: .6em; box-sizing: border-box;" required minlength="1" maxlength="5000" placeholder="Write your message here..."></textarea>
-                    <span id=""></span>
-                    <script>
-                        document.getElementById('textarea').onkeyup = function () {
-                            document.getElementById('count').innerHTML = "Characters left: " + (500 - this.value.length);
-                        };
-                    </script>
                 </fieldset> 
             </form>
             <fieldset style="text-align: center;">
